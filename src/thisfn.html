@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>this functions</title>
+  </head>
+  <body>
+
+    <button type="button" name="button">Button1</button>
+
+    <script type="text/javascript">
+      (function sample(){
+        console.log(this);
+      })();
+
+      var button = document.querySelector('button');
+      button.addEventListener('click', function(){
+        console.log(this);
+      });
+
+      //fat arrow used to return window object
+
+    </script>
+
+  </body>
+</html>

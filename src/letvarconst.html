@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ES6</title>
+  </head>
+  <body>
+  <script type="text/javascript">
+
+  'use strict';
+    if (true) {
+      a = 5;
+    }
+    console.log(a)
+    var a;//a hoisting: to the top
+
+    const b = 10;
+    console.log(b);
+
+    const c = Object.freeze([1,2,4,5,6]);
+    var d = c;
+    //c[2] = 7; - will through error after freezed
+    console.log(c);
+
+    const k = {
+      age: 40
+    }
+    k.age = 30; // can change value in object
+    console.log(k);
+
+    const x = {};
+    x = {
+      foo: 'bar'
+    };
+    console.log(x);
+
+    const j = ['a'];
+    j.join('b');
+    console.log(j)
+
+
+  </script>
+  </body>
+</html>

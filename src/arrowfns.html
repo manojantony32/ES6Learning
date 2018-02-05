@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var a = function(a,b){
+        return a + b;
+      }(2,4);
+      console.log(a);
+
+      //var b = (a,b) => { return a+b }(4,5);
+      var d = ((a,b) => { return a+b })(4,5);
+      //console.log(b(4,5));
+      console.log(d);
+
+      var f = d => console.log(d);
+      f('mano');
+
+      var h = (a) => a+5;
+      console.log(h(2));
+
+      setTimeout(() => console.log('welcome man'),1000);
+
+    </script>
+
+  </body>
+</html>
